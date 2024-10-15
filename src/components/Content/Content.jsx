@@ -33,7 +33,7 @@ const Content = () => {
                     </div>
                 </div>
             </div>
-            <div className="containerMain" style={{ backgroundColor: 'rgb(40, 40, 40)' }}>
+            {/* <div className="containerMain" style={{ backgroundColor: 'rgb(40, 40, 40)' }}>
                 <div className="row">
                     <div className="col-12 text-center my-5">
                         <h1 style={{
@@ -66,7 +66,7 @@ const Content = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="container-quote">
                 <div className="quote-content">
                     <p style={{

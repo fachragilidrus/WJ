@@ -6,7 +6,7 @@ const Navbar = () => {
     const navItems = [
         'Home', 
         'Product', 
-        'Features', 
+        'Contact Person', 
         'About'
     ];
   return (
