@@ -1,0 +1,36 @@
+  .about-section {
+    padding: 30px 0;
+    background-color: rgb(206, 206, 210);
+  }
+  .row {
+    padding: 0;
+    width: 100%;
+    background-color: rgb(206, 206, 210);
+  }
+
+  .profile-image {
+    border-radius: 50%;
+    padding-left: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .about-text {
+    margin-top: 20px;
+    line-height: 1.6;
+    padding-left: 10px;
+  }
+  
+  .skills, .experience, .projects {
+    margin-top: 20px;
+  }
+  
+  .skills ul, .experience ul, .projects ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills li, .experience li, .projects li {
+    margin-bottom: 10px;
+  }

@@ -80,7 +80,7 @@ const Footer = () => {
                                 </a>
                             </p>
                             <p><a 
-                                href="https://www.instagram.com/iamwillypieter/" 
+                                href="https://www.instagram.com/iamwillypieters/" 
                                 target="_blank" 
                                 rel="noopener noreferrer">
                                     <img src={instagram} alt="" />

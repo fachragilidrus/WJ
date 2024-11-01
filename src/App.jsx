@@ -1,39 +1,25 @@
-import Navbar from './components/Navbar/Navbar';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Content from './components/Content/Content';
+import Navbar from './components/Navbar/Navbar';
+import Product from './components/Page/Product/Product';
+import Features from './components/Page/Features';
+import About from './components/Page/About/About'; 
 import Footer from './components/Footbar/Footer';
-import React, { Component } from 'react'
-import { API_URL } from './utils/constant';
-import axios from 'axios';
 
-export default class App extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      menus: [],
-    }
-  }
-
-  componentDidMount() {
-    axios
-      .get(API_URL + "products")
-      .then(res => {
-        const menus = res.data;
-        this.setState({ menus });
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  }
-
-  render() {
-    console.log(this.state.menus);
-    return (
-      <div>
-        <Navbar />
-        <Content />
-        <Footer />
-      </div>
-    )
-  }
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Content />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
+
+export default App;
